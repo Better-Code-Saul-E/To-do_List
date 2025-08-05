@@ -1,0 +1,116 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/*
+Primary (Background): #F9FAFB (very light gray)
+Accent (Button): #2563EB (a strong blue)
+Text: #1F2937 (dark gray)
+Completed Task: #10B981 (a vibrant green)
+*/
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+
+    background-color: #F9FAFB;
+    font-family: "Poppins";
+    color: #1F2937;
+}
+
+.todo-container {
+    max-width: 768px;
+    width: 90%;
+    padding: 5% 10%;
+    margin: 5vh 0;
+    border-radius: 25px;
+    box-shadow: 0 4px 6px #8BC34A;
+    background-color: #FFFFFF;
+}
+
+h1{
+    text-align: center;
+    color: #1F2937;
+    margin-bottom: 20px;
+    font-weight: 700;
+}
+
+#add-task-button {
+    border: none;
+    padding: 10px 20px;
+    background-color: #2563EB;
+    color: white;
+    border-radius: 5px;
+    font-size: small;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+#add-task-button:hover {
+    background-color: #1D4ED8;
+}
+#check-storage-button {
+    padding: 4px 14px;
+    border: 1px solid #DDDDDD;
+    background-color: #f0f0f0;
+    color: #1F2937;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px;
+    margin-bottom: 15px;
+}
+
+#task-list {
+    list-style-type: none;
+}
+#task-list li {
+    background-color: #F9FAFB;
+    padding: 15px;
+    border-radius: 5px;
+    border: 1px solid #E5E7EB;
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+}
+
+#add-task-container {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+#task-input {
+    flex-grow: 1;
+    padding: 10px;
+    border: 2px solid #DDDDDD;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+#clear-completed-button {
+    width: 100%;
+    margin-top: 20px;
+    padding: 10px;
+    border: none;
+    background-color: #DC2626; 
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: 700;
+    transition: background-color 0.3s ease;
+}
+
+#clear-completed-button:hover {
+    background-color: #B91C1C;
+}

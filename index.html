@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="style.css">
+    <title>ToDo List</title>
+</head>
+
+<body>
+    <div class="todo-container">
+        <header>
+            <h1>To Do List</h1>
+            <p> Welcome to your To-Do List! This application saves your tasks directly in your browser using local
+                storage,
+                so your list will be here even after you close the page. Click the button to check if local
+                storage is available on your browser. <button id="check-storage-button">Check Local Storage</button>
+            </p>
+        </header>
+
+        <div id="add-task-container">
+            <input type="text" id="task-input" placeholder="Add a new task">
+            <button id="add-task-button">Add Task</button>
+        </div>
+
+        <!-- <input type="text" id="searchInput" placeholder="Search..."> -->
+        <ul id="task-list">
+            <!-- Tasks will be displayed here -->
+        </ul>
+
+        <button id="clear-completed-button">Clear Completed</button>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
